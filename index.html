@@ -1,0 +1,27 @@
+<html>
+<head><title>JS-less carousel</title><meta charset="UTF-8"><meta name="author" content="11qazxc"><meta name="date" content="2023-03-03"><link rel="stylesheet" href="main.css">
+</head>
+<body>
+<br />
+A very basic carousel stylesheet in 540 symbols (not including comments). It uses "target" pseudoclass to display anything you want, three pieces at a time.<br />
+Frame selector is hidden under checkbox.<br />
+It's not as nice as you can do with JS and it's a bit weird, but it works okay and it's lightweight.
+<gallery style="--gallery-frame-width:75px;--gallery-smframe-width:50px;--gallery-show-smframes:inherit">
+    <frames-wrapper>
+        <div id="g1f0"></div>
+        <a id="g1f1" href="#g1f0"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/3/31/TinyMoho.png/100px-TinyMoho.png" alt="img1" /></a>
+        <a id="g1f2" href="#g1f1"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/0/03/TinyEve.png/100px-TinyEve.png" alt="img2" /></a>
+        <a id="g1f3" href="#g1f2"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/5/5d/TinyKerbin.png/100px-TinyKerbin.png" alt="img3" /></a>
+        <a id="g1f4" href="#g1f3"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/1/17/TinyDuna.png/100px-TinyDuna.png" alt="img4" /></a>
+        <a id="g1f5" href="#g1f4"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/d/dd/TinyDres.png/100px-TinyDres.png" alt="img5" /></a>
+        <a id="g1f6" href="#g1f5"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/3/35/TinyJool.png/100px-TinyJool.png" alt="img6" /></a>
+        <a id="g1f7" href="#g1f6"><img src="https://wiki.kerbalspaceprogram.com/images/thumb/e/e0/TinyEeloo.png/100px-TinyEeloo.png" alt="img7" /></a>
+    </frames-wrapper><br />
+    <selectors-wrapper>
+        <style>selectors-wrapper > input ~ *{display:none}selectors-wrapper > input:checked ~ *{display:unset}selectors-wrapper > input > a{font-size:40px;line-height:0px}</style>
+        <input type="checkbox" />
+        <a href="#g1f0">.</a><a href="#g1f1">.</a><a href="#g1f2">.</a><a href="#g1f3">.</a><a href="#g1f4">.</a><a href="#g1f5">.</a><a href="#g1f6">.</a>
+    </selectors-wrapper>
+</gallery>
+</body>
+</html>
